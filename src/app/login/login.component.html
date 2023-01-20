@@ -1,0 +1,31 @@
+
+
+
+<form  [formGroup]="loginForm"   (ngSubmit)="onFormSubmit()">
+    <input type="text" placeholder="eneter your name" formControlName="userName" required>
+    <span *ngIf="loginForm.get('userName').invalid">please enter valid userName</span>
+    <br> <br>
+      <input type="password" placeholder="eneter your password" formControlName="password" required>
+      <span *ngIf="loginForm.get('userName').invalid">please enter valid userName</span>
+      <br> <br>
+      <button  class="btn btn-primary"
+      (click)="onClick()">login</button>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
